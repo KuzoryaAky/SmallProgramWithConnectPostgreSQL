@@ -1,0 +1,29 @@
+﻿<Window x:Class="UI_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="468" Width="546">
+    <Grid>
+        <Grid Width="400" HorizontalAlignment="Left">
+            <ListBox x:Name="LB_DataShowList" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        </Grid>
+        <Grid Margin="400,0,0,0">
+            <Button x:Name="Button_AddConfirm" Content="AddToDataBase" Margin="10,379,16,0" VerticalAlignment="Top" Height="20" Click="Button_AddConfirm_Click"/>
+            <Button x:Name="Button_ShowResultInDB" Content="ShowResultDataBase" Margin="10,404,16,0" VerticalAlignment="Top" Height="20" Click="Button_ShowResultInDB_Click"/>
+            <Label x:Name="Label_ProductName" Content="ProductName" Margin="10,27,16,0" VerticalAlignment="Top" IsEnabled="False"/>
+            <TextBox x:Name="TB_ProductName" Margin="10,58,16,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label x:Name="Label_Manufacturer" Content="Manufacturer" Margin="10,81,16,0" VerticalAlignment="Top" IsEnabled="False"/>
+            <TextBox x:Name="TB_Manufacturer" Margin="10,112,16,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label x:Name="Label_ProductCount" Content="ProductCount" Margin="10,135,16,0" VerticalAlignment="Top" IsEnabled="False"/>
+            <TextBox x:Name="TB_ProductCount" Margin="10,166,16,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label x:Name="Label_Price" Content="Price" Margin="10,189,16,0" VerticalAlignment="Top" IsEnabled="False"/>
+            <TextBox x:Name="TB_Price" Margin="10,220,16,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Button x:Name="Button_AddProduct" Content="AddProduct" Margin="10,296,16,0" VerticalAlignment="Top" Height="20" Click="Button_AddProduct_Click"/>
+            <Button x:Name="Button_ShowDataInProgram" Content="ShowData" Margin="10,321,16,0" VerticalAlignment="Top" Height="20" Click="Button_ShowDataInProgram_Click"/>
+            <Button x:Name="Button_ClearList" Content="Clear" Margin="10,346,16,0" VerticalAlignment="Top" Height="20" Click="Button_ClearList_Click"/>
+        </Grid>
+    </Grid>
+</Window>
