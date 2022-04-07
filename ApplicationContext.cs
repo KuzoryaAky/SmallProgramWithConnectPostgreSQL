@@ -16,9 +16,9 @@ namespace PostegreSQLConnectTest
                 (
                     "Host = localhost;" +
                     "Port = 5432;" +
-                    "Database = userdb;" +
+                    "Database = userdb;" + //take u DB
                     "User ID = postgres;" +
-                    "Password = 159357yarik101"
+                    "Password = 123123123"// change pass on u settings
                 );
         }
     }
